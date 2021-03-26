@@ -1,3 +1,83 @@
 body {
-    background-color: red;
+    margin: 0;
+    font-family: Lexend, sans-serif;
 }
+
+.night {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 75px;
+    height: 75px;
+    background-image: url("images/sun.svg");
+}
+
+.day {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 75px;
+    height: 75px;
+    background-image: url("images/moon.svg");
+}
+
+.night:hover {
+    box-shadow: -25px -25px 1000px 25px rgb(251, 255, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.day:hover {
+    box-shadow: -25px -25px 1000px 25px rgb(0, 38, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.containerNight {
+    background-color: rgb(54, 49, 49);
+    color: rgb(210, 210, 210);
+}
+
+.containerDay {
+    background-color: rgb(200, 200, 200);
+    color: rgb(60, 60, 60);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+/* header */
+.header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3.5rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    padding:25px 0 75px 0;
+}
+
+.beat {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+/*header*/
+
+/* playground */
+.playground {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image {
+    width: 8vw;
+    height: 16vh;
+}
+
+.flex {
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* playground */
