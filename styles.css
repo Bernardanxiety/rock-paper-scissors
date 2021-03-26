@@ -28,7 +28,7 @@ body {
 }
 
 .day:hover {
-    box-shadow: -25px -25px 1000px 25px rgb(0, 38, 255);
+    box-shadow: -25px -25px 1000px 25px rgb(1, 6, 36);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -64,6 +64,13 @@ body {
 }
 /*header*/
 
+/* results  */
+
+
+
+/* results  */
+
+
 /* playground */
 .playground {
     display: flex;
@@ -73,7 +80,14 @@ body {
 .image {
     width: 8vw;
     height: 16vh;
+    margin: 0 10px;
 }
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 5px red;
+
+
 
 .flex {
     width: 30vw;
