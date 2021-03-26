@@ -1,3 +1,4 @@
+// light/dark mode switch
 const modeSwitch = document.getElementById("dayNight");
 const container = document.getElementById("container");
 const dayNight = document.getElementById("dayNight");
@@ -28,3 +29,17 @@ function darkMode1() {
         container.classList.add("containerNight");
     }
 }
+
+// light/dark mode switch
+
+// game functionality
+function cpuMove() {
+    const attacks = ['rock', 'paper', 'scissors'];
+    let number = Math.floor(Math.random()*3);
+    let move = attacks[number];
+
+    return move;
+}
+
+
+// game functionality
