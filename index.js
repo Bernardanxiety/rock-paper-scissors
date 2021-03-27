@@ -29,10 +29,34 @@ function darkMode1() {
         container.classList.add("containerNight");
     }
 }
-
 // light/dark mode switch
 
+// eventlisteners on images
+let playerMove;
+for (let i = 0; i<document.querySelectorAll(".image").length; i++) {
+    document.querySelectorAll(".image")[i].addEventListener("click", function() {
+        playerMove = this.classList[1];
+        return playerMove;
+    });
+}
+// eventlisteners on images
+
 // game functionality
+const cpuSelection = cpuMove();
+
+function playRound(playerMove, cpuSelection) {
+    if(playerMove!==undefined) {
+        if(playerMove==='rock' && cpuSelection==='scissors') {
+            console.log('Player won!');
+        } else if(playerMove==='rock' && cpuSelection==='rock') {
+            console.log("Draw");
+        } else if(playerMove==='rock' && cpuSelection==='paper') {
+            console.log("You lost!");
+        }
+        console.log(playerMove, cpuSelection);
+    }
+}
+
 function cpuMove() {
     const attacks = ['rock', 'paper', 'scissors'];
     let number = Math.floor(Math.random()*3);
